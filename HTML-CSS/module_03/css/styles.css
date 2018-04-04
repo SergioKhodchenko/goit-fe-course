@@ -1,0 +1,58 @@
+
+
+body {
+    color: #626262; /* цвет текста везде серенький как в макете*/
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 24px; /* шрифт скачан с гугла, размеры как в макете*/
+}
+
+a {
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase; /* ко всем ссылкам применяю цвет, большие буквы и отсутствие подчеркивания*/
+}
+a:hover {
+    color: #03a9f4;/* при наведении стает голубым*/
+} 
+
+
+li {
+    display: inline-block;  /* преобразование блочного элемента в строчный. даст
+                            отображение элементов всех списков не столбиком а в линию*/
+} 
+
+nav, section, div {
+    text-align: center; /*выравнивание cодержимого главного меню, основного блока и нижней кнопки по центру страницы*/ 
+}
+
+nav li {
+   
+    width: 160px;
+    margin-top: 50px;
+    margin-bottom: 40px; /* позиционирование пунктов списка главного навигац. меню*/
+   
+}
+section a {
+    color: #b4ad9e; /* только к ссылкам что под фоточками применяю цвет светлее, как в макете*/
+}
+
+section li {
+
+    width: 430px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px; /* позиционирование пунктов списка основного наполнения страницы*/
+}
+
+h2 {
+    font-size: 30px;
+}
+
+button {
+    padding: 20px 30px; 
+    font-size: 20px;
+    margin-bottom: 50px;
+    line-height: 24px; 
+}
