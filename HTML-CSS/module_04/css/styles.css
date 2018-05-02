@@ -128,10 +128,12 @@ h1::after {
 }
 .news li {
     float: left;
-    margin-right: 23px;
     margin-bottom: 20px;
     max-width: 349px;
 }  
+.news li:not(:nth-child(3n)) {
+    margin-right: 36px;
+}
 .news p {
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
