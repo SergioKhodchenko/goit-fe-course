@@ -3,10 +3,14 @@ body, main, .news {
     text-align: center;
     color: #515151;
 }
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
 header {
-    width: 1110px;
+    width: 90%;
     display: inline-block;
-    margin: 0 60px 20px;
+    margin: 0 auto 20px;
 }
 nav {
     float: right;
@@ -57,7 +61,7 @@ nav ul {
 article {
     display: inline-block;
     text-align: center;
-    width: 1300px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 h1 {
@@ -77,6 +81,7 @@ h1::after {
 .goods, .news-list {
     display: inline-block;
     width: 1120px;
+    padding: 0;
     list-style: none;
 }
 .goods li {
@@ -85,7 +90,7 @@ h1::after {
     margin-bottom: 20px;
 }
 .goods li:not(:nth-child(4n)) {
-    margin-right: 20px;
+    margin-right: 26px;
 }
 .box {
     font-family: 'Roboto', sans-serif;
@@ -125,11 +130,11 @@ h1::after {
     float: left;
     margin-right: 23px;
     margin-bottom: 20px;
+    max-width: 349px;
 }  
 .news p {
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
-    width: 349px;
     text-align: left;
 }
 .title {
