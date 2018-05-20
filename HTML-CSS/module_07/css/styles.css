@@ -27,7 +27,7 @@ body {
 header {
     display: flex;
     width: 83%;
-    margin: 10px auto 105px;
+    margin: 20px auto 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -48,14 +48,7 @@ a:hover {
     color: var(--yellow);
 }
 
-.logo {
-    color: var(--yellow);
-    font-family: 'Galada', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    height: 30px;
-    font-size: 26px;
-}
+
 .menu-items {
     flex-grow: 1;
     margin: 0 20px 0;
@@ -150,6 +143,7 @@ a:hover {
     color: #ffffff;
 }
 form{ 
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -158,10 +152,13 @@ form{
     height: 238px;
 }
 .submit {
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 240px;
     height: 66px;
     background-color: var(--yellow);
-    align-self: center;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -172,6 +169,7 @@ textarea {
     height: 203px;
     border-radius: 5px;
     margin-left: 28px;
+    resize: none;
 }
 input {
     width: 455px;
