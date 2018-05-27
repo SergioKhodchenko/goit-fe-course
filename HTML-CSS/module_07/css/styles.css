@@ -102,6 +102,7 @@ a:hover {
     background-image: url(../icons/lock.png)
 }
 .text {
+    margin: 14px auto;
     width: 300px;
     font-size: 14px;
 }
