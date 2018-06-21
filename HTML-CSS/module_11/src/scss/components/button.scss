@@ -1,0 +1,19 @@
+button {
+    height: 44px;
+    color: $link-header-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button-more {
+    padding: 0;
+    width: 160px;
+    border: 2px solid $link-header-color;
+    background-color: transparent; 
+}
+.button-subscribe {
+    width: 150px;
+    border-style: none;
+    background-color: #95e1d3;
+}

@@ -1,0 +1,19 @@
+%socials-transition {
+    fill: $link-header-color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+%transition {
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+%name-text-style {
+    font-size: 14px;
+    color: $title-color;
+    margin: 18px 0 7px;
+}
+%describe-text-style {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}

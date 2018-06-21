@@ -1,0 +1,68 @@
+
+.services {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0 10px 0;
+    }
+    &-items {
+        position: relative;
+        width: 25%;
+        padding-left: 80px;
+        margin-bottom: 80px;
+        &-text {
+            font-family: $secondary-font;
+            font-size: 15px;
+            line-height: 24px;
+            margin: 0;
+            width: 93%;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: left;
+        }
+        &-label {
+            font-size: 14px;
+            color: $title-color;
+            margin: 18px 0 7px;
+            text-align: left;
+            &::before {
+                position: absolute;
+                top: 18px;
+                left: 20px;
+                background-repeat: no-repeat;
+                display: block;
+                content: "";
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}
+.services:hover h3::after {
+    width: 259px;
+    @extend %transition;
+}
+.photo::before {
+    background-image: url(../img/icon/icon-alarm.svg);
+}
+.web::before {
+    background-image: url(../img/icon/icon-graph.svg);
+}
+.create::before {
+    background-image: url(../img/icon/icon-computer.svg);
+}
+.seo::before {
+    background-image: url(../img/icon/icon-book.svg);
+}
+.home::before {
+    background-image: url(../img/icon/icon-home.svg);
+}
+.digit::before {
+    background-image: url(../img/icon/icon-image.svg);
+}
+

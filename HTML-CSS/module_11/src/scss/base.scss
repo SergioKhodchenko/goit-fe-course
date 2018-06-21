@@ -1,0 +1,43 @@
+
+body {
+    color: $main-color;
+    font-family: $main-font;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: $link-header-color;
+}
+h3 {
+    height: 40px;
+    margin: 0 auto 95px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $title-color;
+    &::after {
+        content: "";
+        display: block;
+        width: 59px;
+        height: 30px;
+        border-bottom: 3px solid $socials-bg-color;
+        margin: 10px auto 70px;
+        transition-property: width;
+        transition-duration: 200ms;
+        transition-timing-function: linear;
+    }
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.services-items-label, .nav-menu-items, h3, .name, .button-subscribe, .button-more {
+    text-transform: uppercase;
+}
+.name, .copyright {
+    @extend %name-text-style;
+}
+.team-describe, .occupation, input {
+    @extend %describe-text-style;
+}

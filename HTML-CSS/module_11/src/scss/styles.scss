@@ -1,0 +1,21 @@
+/*
+   Import partials below
+*/
+// Utils
+@import 'normalize';
+@import 'helper/variables';
+@import 'helper/placeholders';
+@import 'helper/bootstrap-grid';
+
+// Base styles
+@import 'fonts';
+@import 'base';
+
+// Main page layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/services';
+@import 'components/team';
+@import 'components/button';

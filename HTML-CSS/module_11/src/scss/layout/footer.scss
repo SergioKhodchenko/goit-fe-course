@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+    padding: 14px 100px;
+    border-top: 1px solid $border-color;
+}
+.red {
+    color: $socials-bg-color;
+}
+input {
+    width: 230px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid; 
+    border-color: $border-color;
+    border-right: 0px;
+    margin-left: 480px;
+}
