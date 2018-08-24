@@ -7,10 +7,11 @@
     <meta name="description" content="Видео продакшн студия полного цикла">
     <meta name="keywords" content="видео продакшн, продакшн студия полного цикла, съемка рекламных роликов, aspirin production">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Segio Khodchenko">
+    <meta name="copyright" content="Сайт студии ASPIRIN PRODUCTION">
+    <link rel="shortcut icon" href="icons/icon.ico" type="image/x-icon">
     <title>ASPIRIN PRODUCTION</title>
     <link rel="stylesheet" href="css/styles_light.css">
-    <!-- <script src="http://www.youtube.com/player_api" id="YTAPI"></script> -->
 </head>
 
 <body>
@@ -49,25 +50,14 @@
                 <source src="video/videoplayback.mp4" type="video/mp4" />
             </video>
         </div>
-        <!-- <div class="background-video">
-                <video width="100%" id = 'vid' class="videoclip" loop>
-                    <source src="video/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                </video>
-                <!-- <video width="100%" frameborder="0" autoplay="autoplay" poster="img/manypeople-img-01.jpg">
-                <source src="video/videoplayback.mp4" type="video/mp4"></video> -->
-        <!-- <iframe frameborder="0" src="https://www.youtube.com/embed/WXilaukTfaM?autoplay=1" allow='autoplay'>
-            </iframe> 
-        </div> -->
         <div class="header-pattern pattern">
         </div>
-        <div class="modal-window">
+        <div class="modal-window header__modal-window" hidden>
             <div class="modal-window__screen">
-                <form class="modal-window__form" action="#" method="GET">
-                    <input class="modal-window__input input-name" type="text" name="name" required placeholder="Как к Вам обращаться?">
+                <form class="modal-window__form" action="handler2.php" method="POST">
+                    <input class="modal-window__input input-name" type="text" name="name" required placeholder="Ваше имя:">
                     <input class="modal-window__input input-tel" type="tel" name="tel" required placeholder="Перезвонить на номер:">
-                    <input class="modal-window__button" type="submit">
-                        <span class="span-sent">отправить</span>
-                </input>
+                    <input class="modal-window__submit" type="submit">
                 </form>
             </div>
         </div>
@@ -94,11 +84,11 @@
                     </div>
             </div>
             <div class="showreel section" id="showreel">
-                <div class="showreel__container">
-                    <video class="showreel__video" width="100%" controls="controls" poster="img/poster2.jpg">
+                <!-- <div class="showreel__container"> -->
+                    <video class="showreel__video" controls="controls" autoplay="1" loop="1" muted="1" style="max-width:100%;" poster="img/poster2.jpg">
                         <source src="video/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="clients section" id="clients">
                 <h2 class="clients__title title">CLIENTS &amp; PARTNERS</h2>
@@ -236,6 +226,24 @@
                         <button class="order-button contacts-button button">Связаться с нами</button>
                     </div>
                 </div>
+                <div class="modal-window contacts__modal-window--tel" hidden>
+                    <div class="modal-window__screen">
+                        <form class="modal-window__form" action="handler2.php" method="POST">
+                            <input class="modal-window__input input-name" type="text" name="name" required placeholder="Ваше имя:">
+                            <input class="modal-window__input input-tel" type="tel" name="tel" required placeholder="Перезвонить на номер:">
+                            <input class="modal-window__submit" type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-window contacts__modal-window--mail" hidden>
+                    <div class="modal-window__screen">
+                        <form class="modal-window__form" action="handler2.php" method="POST">
+                            <input class="modal-window__input input-name" type="text" name="name" required placeholder="Ваше имя:">
+                            <input class="modal-window__input input-tel" type="tel" name="tel" required placeholder="Перезвонить на номер:">
+                            <input class="modal-window__submit" type="submit">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -274,6 +282,7 @@
         <div class="footer-pattern pattern">
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
